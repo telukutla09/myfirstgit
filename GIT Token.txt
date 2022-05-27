@@ -1,0 +1,11 @@
+echo "# myfirstgit" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/telukutla09/myfirstgit.git
+git push -u origin main
+
+Token
+
+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
