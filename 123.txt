@@ -1,1 +1,17 @@
 > git branch -m SBI_Main_Branch >>>> Renaming the Branch
+
+Jenkins :
+
+wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+
+echo "deb https://pkg.jenkins.io/debian-stable binary/" | sudo tee /etc/apt/sources.list.d/jenkins.list
+sudo apt update
+sudo apt install jenkins
+systemctl status jenkins
+sudo systemctl start jenkins
+sudo ufw allow 8080
+sudo ufw allow OpenSSH
+sudo ufw enable
+sudo ufw status
+
+ssh -i "Masterjenkis.pem" ubuntu@ec2-3-145-29-227.us-east-2.compute.amazonaws.com
