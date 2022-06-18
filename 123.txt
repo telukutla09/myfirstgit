@@ -15,3 +15,8 @@ sudo ufw enable
 sudo ufw status
 
 ssh -i "Masterjenkis.pem" ubuntu@ec2-3-145-29-227.us-east-2.compute.amazonaws.com
+
+
+http://3.145.29.227:8080/
+
+https://github.com/maha4dsvc/mahalogin
